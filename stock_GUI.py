@@ -115,7 +115,7 @@ class StockApp:
         Label(dataFrame, text="Date,Price,Volume:").grid(row=0, column=0, sticky=W)
         self.dailyEntry = Entry(dataFrame, width=40)
         self.dailyEntry.grid(row=0, column=1, padx=4)
-        self.dailyEntry.insert(0, "1/15/25,135.91,250000000")
+        self.dailyEntry.insert(0, "m/d/yy,price,volume")
         Button(dataFrame, text="Add", command=self.add_daily_data).grid(row=0, column=2, padx=4)
 
         # Setup History Tab
